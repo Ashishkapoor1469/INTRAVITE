@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { AiOutlineBars } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { useEffect, useState } from "react";
+import Theme from "@/components/Themecotroller/ThemeController";
 export default function NavMobo() {
   const [Header, setHeader] = useState(false);
   const [Open, setOpen] = useState(false);
@@ -40,6 +41,7 @@ export default function NavMobo() {
       }
     >
       <div className="logo text-2xl font-bold ">INTRAVITE</div>
+      <div className="absolute right-14"> <Theme/></div>
       <button onClick={Close} className="text-2xl text-black z-20">
         {Open ? <RxCross1 /> : <AiOutlineBars />}
       </button>
@@ -56,9 +58,9 @@ export default function NavMobo() {
                 {routes.map((route,index)=>{
                 return <Link href={route.href} onClick={Close}  key={index}>{route.name}</Link>
                 })}
-
-            </div>
-          </motion.main>
+          <Button1 dis="Contact Us"/>
+            </div> 
+          </motion.main> 
         </>
       ) : (
         <></>

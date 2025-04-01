@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Button1 from "@/components/Buttons/button";
+import Theme from "@/components/Themecotroller/ThemeController";
 import { useEffect, useState } from "react";
 export default function NavLg() {
   const [Header, setHeader] = useState(false);
@@ -33,7 +34,7 @@ export default function NavLg() {
           : "w-full z-20 fixed flex justify-between items-center px-15 h-20 transition-all duration-300 text-white"
       }
     >
-      <div className="logo text-2xl font-bold ">INTRAVITE</div>
+      <Link href="/" className="logo text-2xl font-bold ">INTRAVITE</Link>
       <div className="cont flex gap-8   ">
         {routes.map((route, index) => {
           return (
@@ -48,9 +49,11 @@ export default function NavLg() {
           );
         })}
       </div>
-      <div className="button">
+      <div className="button flex gap-4 justify-center items-center">
+      <div className=""> <Theme/></div>
         {" "}
         <Button1 dis="Contact us" />
+       
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light" >
-      <body cz-shortcut-listen="true">
+      <body className="scroll-smooth" cz-shortcut-listen="true">
         <Navbar/>
         {children}
       </body>
