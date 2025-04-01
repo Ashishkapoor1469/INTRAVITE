@@ -17,7 +17,7 @@ export default function Home() {
           <div className="w-full h-120 bg-[#7971EA]"></div>
           <div className="w-full h-full"> </div>{" "}
         </div>
-        <div className="h-40 w-full flex flex-col justify-center items-center text-white">
+        <div className="h-40 w-full flex flex-col justify-center items-center text-white z-0">
           <h1 className="text-5xl font-extrabold">Courses</h1>
         </div>
         <Cards />
