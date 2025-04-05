@@ -75,9 +75,9 @@
 
 
 .bg-1{
-  background-image: url(../image/pexels-mikhail-nilov-7594479.webp);
+  background-image: url(../image/Untitled-8.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 object-position: center;
 object-fit: cover;
 
